@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220922 10:54:42.612" rpa="false" schemaversion="3">
+<suite id="s1" name="Login" source="/home/nurulariessa/Desktop/RF/testcases/login/login.robot">
+<test id="s1-t1" name="Login To Deriv" line="14">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://app.deriv.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220922 10:54:42.758" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com'.</msg>
+<status status="PASS" starttime="20220922 10:54:42.758" endtime="20220922 10:54:48.003"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220922 10:54:48.005" endtime="20220922 10:54:48.335"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${login_button}</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 10:54:48.335" endtime="20220922 10:54:48.427"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 10:54:48.435" level="INFO">Clicking element '//button[@id='dt_login_button']'.</msg>
+<status status="PASS" starttime="20220922 10:54:48.434" endtime="20220922 10:54:51.435"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${email_field}</arg>
+<arg>50</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 10:54:51.437" endtime="20220922 10:54:51.474"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email_field}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220922 10:54:51.475" level="INFO">Typing text 'ariessa+67@besquare.com.my' into text field '//input[@id='txtEmail']'.</msg>
+<status status="PASS" starttime="20220922 10:54:51.474" endtime="20220922 10:54:51.605"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220922 10:54:51.606" level="INFO">Typing text 'Passw0rd' into text field '//input[@id='txtPass']'.</msg>
+<status status="PASS" starttime="20220922 10:54:51.605" endtime="20220922 10:54:51.780"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${login_form_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220922 10:54:51.783" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220922 10:54:51.781" endtime="20220922 10:54:54.218"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${account_info}</arg>
+<arg>30</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220922 10:54:54.219" endtime="20220922 10:54:55.128"/>
+</kw>
+<status status="PASS" starttime="20220922 10:54:42.757" endtime="20220922 10:54:55.131"/>
+</test>
+<status status="PASS" starttime="20220922 10:54:42.613" endtime="20220922 10:54:55.135"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
