@@ -5,7 +5,7 @@ Library  SeleniumLibrary
 ${login_button}  //button[@id='dt_login_button']
 ${login_form_button}  //button[@type='submit']
 ${email_field}  //input[@id='txtEmail']
-${email}  ariessa+67@besquare.com.my
+${email}
 ${password_field}  //input[@id='txtPass']
 ${password}  
 ${account_info}  //div[@id='dt_core_account-info_acc-info']
